@@ -63,7 +63,7 @@ $b->tampilWarna();
 ?>
 ```
 
-Program ini merupakan contoh sederhana penerapan konsep OOP dalam PHP. Pada program ini dibuat ```class``` bernama "MOBIL" yang memmiliki tiga properti utama yaitu ```warna```. ```merk```, dan ```harga```, yang semuanya bersifat private sehingga tidak dapat diakses secara langsung dari luar ```class```. 
+Program ini merupakan contoh sederhana penerapan konsep OOP dalam PHP. Pada program ini dibuat ```class``` bernama "MOBIL" yang memiliki tiga properti utama yaitu ```warna```. ```merk```, dan ```harga```, yang semuanya bersifat private sehingga tidak dapat diakses secara langsung dari luar ```class```. 
 
 ```class``` ini juga menyediakan dua method, yaitu ```gantiWarna()``` untuk menggati warna mobil dan ```tampilWarna()``` untuk menampilkan warna mobil saat ini. setelah ```class``` didefinisikan, program mendefinisikan dua objek, yaitu ```$a``` sebagai mobil pertama dan ```$b``` sebagai mobil kedua.  
 
@@ -147,7 +147,7 @@ echo "</body></html>";
 
 Program ini merupakan implementasi dari ```class library form``` untuk membuat sebiuah form input sederhana. Pada program ini, file ```form.php``` di include terlebih dahulu karena berisi definisi ```class``` yang diperlukan untuk membangun form secara dinamis. Setelah itu program membentuk struktur dasar halaman HTML dan membuat sebuah objek dari class form, dengan parameter action kosong dan label tombol sebmit berupa "Input Form". 
 
-Program ini menambahkan beberapa field input kedalam form, yaitu fi untuk NIM, Nama, dan Alamat, masing-masing menggunakan method ```addfield()```. Setelah seluruh field ditambahkan, program menampilkan judul "Silahkan isi form berikut ini:", kemudia memanggil method ```displayForm()``` untuk menampilkan form secara lengkap di dalam halaman HTML. 
+Program ini menambahkan beberapa field input kedalam form, yaitu field untuk NIM, Nama, dan Alamat, masing-masing menggunakan method ```addfield()```. Setelah seluruh field ditambahkan, program menampilkan judul "Silahkan isi form berikut ini:", kemudia memanggil method ```displayForm()``` untuk menampilkan form secara lengkap di dalam halaman HTML. 
 
 Berikut hasil pada Browser 
 
@@ -270,7 +270,7 @@ class Database
 
 Program ini berisi sebuah ```class``` bernama database yang digunakan untuk mengelola proses koneksi dan interaksi dengan database menggunakan pendekatan OOP dalam PHP. ```class``` ini dirancang agar proses koneksi, pengambilan data, penambahan data, pembaruan data, dan penghapusan data dapat dilakukan secara lebih terstruktur dan mudah digunakan kembali. 
 
-```class``` ini menyediakan beberapa method utama yaitu,  ```query()``` digunakan untuk menjalankan perintah SQL secara langsung, ```get()``` berfungsi untuk mengambil satu daa dari sebuag tabel, dengan opsi menggunakan kondisi tertentu, ```insert()``` digunakan untuk nemambahkan data baru ke dalam tabel, dimana data dikirim dalam bentuk array dan otomatis diubah menjadi format SQL yang sesuai, ```update()``` digunakan untuk memperbarui data berdasarkan kondisi tertentu, dan ```delete()``` digunakan untuk menghapus data dari tabel sesuai filter yang diberikan. 
+```class``` ini menyediakan beberapa method utama yaitu,  ```query()``` digunakan untuk menjalankan perintah SQL secara langsung, ```get()``` berfungsi untuk mengambil satu data dari sebuah tabel, dengan opsi menggunakan kondisi tertentu, ```insert()``` digunakan untuk nemambahkan data baru ke dalam tabel, dimana data dikirim dalam bentuk array dan otomatis diubah menjadi format SQL yang sesuai, ```update()``` digunakan untuk memperbarui data berdasarkan kondisi tertentu, dan ```delete()``` digunakan untuk menghapus data dari tabel sesuai filter yang diberikan. 
 
    
 # PERTANYAAN DAN TUGAS 
