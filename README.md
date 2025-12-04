@@ -63,6 +63,15 @@ $b->tampilWarna();
 ?>
 ```
 
+Program ini merupakan contoh sederhana penerapan konsep OOP dalam PHP. Pada program ini dibuat ```class``` bernama "MOBIL" yang memmiliki tiga properti utama yaitu ```warna```. ```merk```, dan ```harga```, yang semuanya bersifat private sehingga tidak dapat diakses secara langsung dari luar ```class```. 
+
+```class``` ini juga menyediakan dua method, yaitu ```gantiWarna()``` untuk menggati warna mobil dan ```tampilWarna()``` untuk menampilkan warna mobil saat ini. setelah ```class``` didefinisikan, program mendefinisikan dua objek, yaitu ```$a``` sebagai mobil pertama dan ```$b``` sebagai mobil kedua.  
+
+Berikut hasil pada Browser 
+
+<img width="274" height="244" alt="Screenshot 2025-12-04 194348" src="https://github.com/user-attachments/assets/11fafa8e-2ca0-4a8b-9bdb-7286ac53219b" />
+
+
 # MEMBUAT FILE DENGAN NAMA ```form.php```
 
 ```
@@ -110,6 +119,10 @@ name='".$this->fields[$j]['name']."'></td></tr>";
 ?>
 ```
 
+```class``` ini dibuat agar pembuatan form menjadi lebih mudah, terstruktur, dan tidak perlu ditulis secara manual setiap kali dibutuhkan. Di dalam ```class``` ini terdapat beberapa properti, yaitu ```$fields``` yang berfungsi untuk menyimpan daftar field yang akan ditampilkan, ```$action``` untuk menentukan tujuan ketika form dikirimkan, ```$submit``` sebagai label tombol submit, serta ```$jumlahField``` untuk menghitung jumlah field yang ditambahkan.
+
+```class``` ini menyediakan tiga method utama. ```__construct()``` digunakan untuk mengatur nilai awal seperti action form dan teks pada tombol submit, ```addField``` berfungsi untuk menambahkan field baru ke dalam form lengkap dangan nama dan labelnya, sedangkan ```displayForm()``` digunakan untuk menampilkan form dalam bentuk tabel HTML beserta semua field dan tombol submit yang telah ditambahkan. 
+
 # MEMBUAT FILE DENGAN NAMA ```form_input.php```
 
 ```
@@ -131,6 +144,14 @@ echo "</body></html>";
 
 ?>
 ```
+
+Program ini merupakan implementasi dari ```class library form``` untuk membuat sebiuah form input sederhana. Pada program ini, file ```form.php``` di include terlebih dahulu karena berisi definisi ```class``` yang diperlukan untuk membangun form secara dinamis. Setelah itu program membentuk struktur dasar halaman HTML dan membuat sebuah objek dari class form, dengan parameter action kosong dan label tombol sebmit berupa "Input Form". 
+
+Program ini menambahkan beberapa field input kedalam form, yaitu fi untuk NIM, Nama, dan Alamat, masing-masing menggunakan method ```addfield()```. Setelah seluruh field ditambahkan, program menampilkan judul "Silahkan isi form berikut ini:", kemudia memanggil method ```displayForm()``` untuk menampilkan form secara lengkap di dalam halaman HTML. 
+
+Berikut hasil pada Browser 
+
+<img width="511" height="277" alt="Screenshot 2025-12-04 200300" src="https://github.com/user-attachments/assets/59daed8f-a050-47ce-8a97-88ed65a8b7ef" />
 
 # MEMBUAT FILE DENGAN NAMA ```database.php```
 
@@ -247,27 +268,18 @@ class Database
 ?>
 ```
 
-# MEMBUAT FILE DENGAN NAMA ```config.php```
+Program ini berisi sebuah ```class``` bernama database yang digunakan untuk mengelola proses koneksi dan interaksi dengan database menggunakan pendekatan OOP dalam PHP. ```class``` ini dirancang agar proses koneksi, pengambilan data, penambahan data, pembaruan data, dan penghapusan data dapat dilakukan secara lebih terstruktur dan mudah digunakan kembali. 
 
-```
-<?php
-$config = [
-    'host' => 'localhost',
-    'username' => 'root',
-    'password' => '',
-    'db_name' => 'lab10_php_oop'
-];
-?>
-```
+```class``` ini menyediakan beberapa method utama yaitu,  ```query()``` digunakan untuk menjalankan perintah SQL secara langsung, ```get()``` berfungsi untuk mengambil satu daa dari sebuag tabel, dengan opsi menggunakan kondisi tertentu, ```insert()``` digunakan untuk nemambahkan data baru ke dalam tabel, dimana data dikirim dalam bentuk array dan otomatis diubah menjadi format SQL yang sesuai, ```update()``` digunakan untuk memperbarui data berdasarkan kondisi tertentu, dan ```delete()``` digunakan untuk menghapus data dari tabel sesuai filter yang diberikan. 
 
-# HASIL PADA BROWSER DARI FILE ```mobil.php```
-
-<img width="274" height="244" alt="Screenshot 2025-12-04 194348" src="https://github.com/user-attachments/assets/ec9f1751-fbe5-4511-bb53-2721112917a5" />
-
-   Gambar ini menampilkan hasil dari pemrograman PHP yang menggunakan konsep OBject Orientasi Pemrograman (OOP) dengan membuat ```class mobil```.
    
 # PERTANYAAN DAN TUGAS 
 
 <img width="597" height="85" alt="Screenshot 2025-12-04 204237" src="https://github.com/user-attachments/assets/aabbf998-e744-4e79-8bf9-fb68f5164c0f" />
+
+Hasilnya: 
+
+<img width="616" height="376" alt="Screenshot 2025-12-04 230505" src="https://github.com/user-attachments/assets/fb544738-b71a-404f-af1b-329ec9a10a70" />
+
 
    
